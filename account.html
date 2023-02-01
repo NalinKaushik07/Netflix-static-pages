@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+    <title>Netflix-Account</title>
+    <style>
+        .navigation{
+    background-color: transparent;
+    height: 80px;
+    border-bottom: 1px inset rgb(224, 217, 217);
+    
+}
+.logo{
+    padding-right: 150px;
+    list-style: none;
+}
+.signin{
+    margin-top: 0px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    margin-left: 57%;
+    width: 100%;
+    list-style: none;
+    
+}
+.email{
+    height: 40px;
+    width: 70%;
+    margin-left: -28%;
+}
+.email-div{
+    height: 80px;
+}
+.password{
+    height: 50px;
+    width: 90%;
+    margin-left: -8%;
+    font-size: large;
+}
+.password-div{
+    height: 80px;
+}
+.next{
+    height: 50px;
+    width: 92%;
+    margin-left: -7.8%;
+    background-color: red;
+    border: none;
+    color: whitesmoke;
+    font-size: larger;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <ul style="display: flex;">
+                <div class="logo">
+                <li><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo" width="150px"></li>
+                </div>
+                <div class="signin">
+                <li><h3>Sign In</h3></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <center>
+    <div id="cont1" style="align-items: left; display: none;">
+        <div style="width: 35%; ">
+        <form action="/account" method="POST">
+        <div class="acc-heading" style="text-align: left;">
+        <div style="padding-top: 3%;"><span>STEP 2 OF 2</span></div>
+        <div>
+        <H1>Create a password to start your membership</H1>
+        <p>Just a few more step and you're done!</p>
+        <p>We hate paperwork, too.</p>
+        </div>
+        </div>
+        <div class="email-div">
+            <h3 id="email-tag">hello</h3>
+        </div>
+        <div class="password-div">
+            <input type="password" class="password" name="password" id="password" placeholder="Add a password">
+        </div>
+        <a  onclick="location.href='/forgot-password'" style="text-decoration: none;color:blue;margin-left: -63%;font-size: larger;">Forgot your Password?</a>
+        <div class="next-div " style="padding-top: 5%;">
+            <button  class="next" >Next</button>
+        </div>
+    
+    </form>
+    </div>
+    </div>
+    <div id="cont2" style="padding-top: 5%; display: block;">
+        <!-- <span style="font-family: wingdings; font-size: 200%;">&#252;</span> -->
+        <div style="padding-top: 5%;">
+            <span>STEP 1 OF 2</span>
+            <br>
+            <h1 style="font-size: 35px; color: rgb(44, 43, 43);">Choose your plan.</h1>
+        </div>
+        <div style="padding-bottom:5%;text-align:left;width: 20%;">
+        
+            <span style="font-family: wingdings; font-size: 200%;color: red;">&#252;</span>
+            <span style="font-size: larger;">No commitments,cancel <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;anytime.</span>
+            <br>
+            <span style="font-family: wingdings; font-size: 200%; color: red;">&#252;</span>
+            <span style="font-size: larger;">Everything on Netflix for one <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low price.</span>
+            <br>
+            <span style="font-family: wingdings; font-size: 200%;color: red;">&#252;</span>
+            <span style="font-size: larger;">No ads and no extra fees.Ever.</span>
+        
+        </div>
+
+        <div>
+            <button style="color: whitesmoke;background-color: red;border: none;width: 25%;height: 60px;font-size: larger;" onclick = myFunction() >Next</button>
+        </div>
+    </div>
+    <div style="display: none;border: 2px solid black;width: 70%;text-align: left;">
+        <div style="height:90px">
+            <span>STEP 2 OF 3</span><br>
+            <H1>Choose the plan that's right for you</H1>
+        </div>
+        <div>
+            <span style="font-family: wingdings; font-size: 200%;color: red;">&#252;</span>
+            <span>Watch all yoou want. Ad-free.</span>
+            <br>
+            <span style="font-family: wingdings; font-size: 200%;color: red;">&#252;</span>
+            <span>Reccomendations just for you.</span>
+            <br>
+            <span style="font-family: wingdings; font-size: 200%;color: red;">&#252;</span>
+            <span>Chage or cancel your plan anytime.</span>
+        </div>
+
+       
+    
+    </div>
+    </center>
+    <!-- <div id="sticky-element" style="background:purple;height:80px; position:sticky;" ></div> -->
+   <script>
+       function myFunction(){
+            let container = document.getElementById("cont1");
+            let division = document.getElementById("cont2");
+            container.style.display = "block";
+            division.style.display = "none";
+       }
+   </script>
+    <!-- <img src="https://raw.githubusercontent.com/OtchereDev/django_netflix_clone/main/static/net_tab-content-2-2.png" alt=""> -->
+</body>
+</html>
