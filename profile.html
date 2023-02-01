@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Profile</title>
+</head>
+
+<body style="background-color: rgb(29, 28, 28);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;">
+    <div style="display:block"id="first">
+    <div style="border: 1px grey solid;position: absolute;height: 40%;width: 20%;top: 30%;right: 70%;border-radius: 25px ;">
+        <input type="image" src="/" alt="">
+    </div>
+    <center>
+    <div style=" text-align: left;margin-top: 10%;margin-left: 10%;width: 30%;">
+        <div style="padding-bottom: 10px;">
+            <h1 style="font-size: 50px;">Add Profile</h1>
+            <span>Add a profile for another person watching Netflix.</span>
+        </div>
+        <div style="border-bottom: 2px grey solid;border-top: 2px grey solid; padding-top: 60px;padding-bottom: 60px;">
+    
+            <input type="text" name="name" id="name" placeholder="Name" style="height: 25px; width: 180px;margin-top:10px;background-color: transparent;border: 1px solid white; color: white;font-size: large;">
+            <input type="checkbox" name="kid" id="kid" style="background-color: transparent;border: 1px solid white;height: 20px;width: 25px;"><label for="kid">Kid?</label>
+        </div>
+        <div style="padding-top :10px;">
+            <button type="submit" style="background-color: red; border:none;color: white;height: 30px;width: 120px;" onclick="Continue()">Continue</button><button style="margin-left:10% ;border:1px white solid;background-color: transparent;color: white;height: 30px; width: 90px;">Cancel</button>
+        </div>
+    </div>
+    
+</center>
+    </div>
+    <center>
+        <form action="/profile" method="POST">
+    <div style="display: none;"id="second">
+        <div style=" text-align: left;margin-top: 10%;margin-left: 10%;width: 30%;">
+            <div style="padding-bottom: 10px;">
+                <h1 style="font-size: 50px;">Add Profile</h1>
+                <span>Add a profile for another person watching Netflix.</span>
+            </div>
+            <div style="border-bottom: 2px grey solid;border-top: 2px grey solid; padding-top: 60px;padding-bottom: 60px;">
+        
+                <input type="text" name="name" id="name" placeholder="Name" style="height: 25px; width: 180px;margin-top:10px;background-color: transparent;border: 1px solid white; color: white;font-size: large;">
+                <input type="checkbox" name="kid" id="kid" style="background-color: transparent;border: 1px solid white;height: 20px;width: 25px;"><label for="kid">Kid?</label>
+            </div>
+            <div style="padding-top :10px;">
+                <button type="submit" style="background-color: red; border:none;color: white;height: 30px;width: 120px;">Continue</button><button style="margin-left:10% ;border:1px white solid;background-color: transparent;color: white;height: 30px; width: 90px;">Cancel</button>
+            </div>
+        </div>
+    </div>
+        </form>
+    </center>
+    
+    <!-- <script>
+        function Continue(){
+            let first = document.getElementById("first");
+            let second = document.getElementById("second");
+
+            first.style.display = "none";
+            second.style.display = "block";
+        }
+    </script> -->
+</body>
+</html>
