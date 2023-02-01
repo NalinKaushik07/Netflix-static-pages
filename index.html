@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Netflix - Home</title>
+    <style>
+        body{
+        background-image: url("https://inculture.microsoft.com/wp-content/uploads/prod/2019/07/st3-all-up-logo-3200x1800-1600x900.jpg");
+        background-repeat: no-repeat;
+        background-size:100%;
+        }
+        .navbars{
+            display: flex;
+        }
+        .logout{
+            margin: 1% 0 0 80%;
+            font-size: larger;
+            
+        }
+        .log{
+            height:30px;width:80px;background-color:rgba(255,0,20);border:none;color:whitesmoke;
+        }
+        .log:hover{
+            cursor: pointer;
+        }
+        .profile{
+            background: rgb(82, 82, 243);
+            width: 13%;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            border-radius: 8px;
+            border: 2px blue solid;
+            color:whitesmoke;
+            font-size: larger;
+
+        }
+
+        .main-container{
+            margin: 5% 0 0 15%;
+        }
+        .new-profile{
+            margin: 3% 0 0 45%;
+        }
+        .create-profile{
+            height: 40px;
+            width: 150px;
+            background-color:gray ;
+            color: whitesmoke;
+            border: none;
+        }
+
+        .create-profile:hover{
+            cursor: pointer;
+        }
+        .heading{
+            color: whitesmoke;
+            margin: 10% 0 0 38%;
+            font-size: 30px;
+        }
+        .heading-div{
+            background-color: linear-gradient(to left,white,black); 
+        }
+        .nav:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <nav class="navbars" style="width: 100%; margin-top: -2%; position: fixed;height: 12%;left: 0%;z-index: 3;" id="nav">
+        <div class="navbar" style="display:flex; color:rgba(255, 255, 255, 0.651);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <ul style="padding-top: 10px" class="nav"><a href="https://www.freepnglogos.com/pics/netflix-logo-png" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" width="150"  alt="netflix logo" /></a></ul>
+            <ul class="nav"><h4>Home</h4></ul>
+            <ul class="nav"><h4>Series</h4></ul>
+            <ul class="nav"><h4>Film</h4></ul>
+            <ul class="nav"><h4>New & Popular</h4></ul>
+            <ul class="nav"><h4>My List</h4></ul>
+            <div style="padding-left:490px;padding-top: 20px">
+            <ul><button  class="log"type="submit" onclick="location.href='/signin'">Log Out</button></ul>
+            </div>
+        </div>
+        <!-- <div class="logout">
+            <button  class="log"type="submit">Log Out</button>
+        </div -->
+        <div>
+            <!-- <input type="search" name="movies" id="movies"> -->
+        </div>
+        
+    </nav>
+    <div class="heading-div" style="color: white; margin-left:-1%; text-align:left;height: 685px;border: 1px transparent solid;border-right: none;padding-bottom: 62px;background:linear-gradient(to right,black,black,transparent);width: 45%;" >
+    <div style="margin-top:25%;padding-left: 60px; ">
+        <h1 style="font-size: 65px;color:goldenrod ;">STRANGER <br> &nbsp;&nbsp;&nbsp;THINGS</h1>
+        <p style="text-align: left;font-size: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: whitesmoke;"> When a young boy vanishes, a small town uncovers <br>
+            a mystery involving secret experiments, terrifying <br> 
+            supernatural forces and a strange little girls 
+        </p>
+    </div>
+    
+    <div style="padding-left: 50px;padding-top: 20px; padding-bottom: 15%;">
+       &nbsp;&nbsp; <button style="height: 35px;width: 105px;border: none;border-radius: 3px;font-size: larger">Play</button> &nbsp; &nbsp;<button style="font-size: larger ;height: 35px;width: 105px;border: none;border-radius: 3px;backdrop-filter: blur;">My List</button>
+    </div>
+
+
+    
+
+<div>
+    <div style="margin-left: 10%;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;display: block;"><h2>Trending Now</h2></div>
+    <div style="display:flex;overflow-x:hidden;width: 1353px;z-index: 2px;background: linear-gradient(transparent,rgb(14, 11, 11),rgb(14, 11, 11),rgb(14, 11, 11),rgb(14, 11, 11));">
+        <ul><img src="https://images3.alphacoders.com/882/thumbbig-882548.webp"  style="height: 180px; width: 310px;margin-left: 0%;border-radius: 5px;"alt="Stranger Things 2" srcset=""></ul>
+        <div style="margin-left: -31px;">
+        <ul><img src="https://wallpaperboat.com/wp-content/uploads/2021/10/18/79418/squid-game-11-920x518.jpg" alt="Squid Game" style="height: 180px; width: 310px;margin-left: 0%;border-radius: 5px;"></ul>
+        </div>
+        <div style="margin-left: -31px;">
+            <ul><img src="https://images3.alphacoders.com/882/thumbbig-882548.webp" alt="" style="height: 180px; width: 310px;margin-left: 0%;border-radius: 5px;"></ul>
+        </div>
+        <div style="margin-left: -31px;">
+            <ul><img src="https://images3.alphacoders.com/882/thumbbig-882548.webp" alt="" style="height: 180px; width: 310px;border-radius: 5px;"></ul>
+        </div>    
+        </div>
+
+
+<div style="height: 2000px; width: 225%;margin-left: 0%;background:rgb(14, 11, 11);color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-top: -7%;">  
+     <br><br>
+    <div style="margin-left: 4%;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;display: block;"><h2>Popular on Netflix</h2></div>
+    <div style="display:flex;overflow-y:hidden;width: 1353px;z-index: 2px;">
+        <ul><img src="https://images3.alphacoders.com/882/thumbbig-882548.webp" id="strangerthings" style="height: 180px; width: 310px;margin-left: 0%;border-radius: 5px;"alt="Stranger Things 2" srcset=""></ul>
+        <div style="margin-left: -31px;">
+        <ul><img src="https://wallpaperboat.com/wp-content/uploads/2021/10/18/79418/squid-game-11-920x518.jpg" alt="Squid Game" id="squidgame" style="height: 180px; width: 310px;margin-left: 0%;border-radius: 5px;"></ul>
+        </div>
+        <div style="margin-left: -31px;">
+            <ul><img src="https://images3.alphacoders.com/882/thumbbig-882548.webp" alt="" id="silentsea" style="height: 180px; width: 310px;margin-left: 0%;border-radius: 5px;"></ul>
+        </div>
+        <div style="margin-left: -31px;">
+            <ul><img src="https://images3.alphacoders.com/882/thumbbig-882548.webp" id="moneyheist" alt="" style="height: 180px; width: 310px;border-radius: 5px;"></ul>
+        </div>    
+        </div>
+    </div>    
+     </div> 
+</div> 
+</div>
